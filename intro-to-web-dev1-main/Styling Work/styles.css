@@ -1,0 +1,374 @@
+:root {
+    font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --primary: #0056e0;
+    --secondary: #ebebd3;
+    --accent: #fce762;
+  }
+  
+  p {
+    background-color: yellow;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+  }
+  
+  h4 {
+    text-transform: lowercase;
+  }
+  
+  .center {
+    text-align: center;
+    color: red;
+  }
+  
+  p.center {
+    color: blue;
+    font-size: 1.3em;
+  }
+  
+  #chapter {
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  h2,
+  #chapter {
+    text-transform: uppercase;
+    color: green;
+  }
+  
+  h1,
+  h2,
+  .center {
+    text-align: center;
+  }
+  
+  #FirstHeading {
+    background-color: blue;
+    font-size: 40px;
+    color: purple;
+    border-color: aqua;
+  }
+  
+  #SecondHeading {
+    background-color: yellow;
+    font: 50px;
+    color: orange;
+    border-color: green;
+  }
+  
+  .days {
+    list-style-position: inside;
+  }
+  
+  .days li {
+    text-transform: uppercase;
+    color: #a0a;
+    font-size: 1.4em;
+  }
+  
+  .flavors {
+    list-style-type: circle;
+  }
+  
+  .flavors li {
+    font-size: 1.2em;
+    text-transform: lowercase;
+  }
+  
+  .nav-h,
+  .nav-v {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav-h li {
+    float: left;
+  }
+  
+  .nav-v {
+    width: 200px;
+  }
+  
+  ul li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04aa6d;
+  }
+  
+  #handling-div {
+    background-color: #17255a;
+  }
+  
+  #handling-h1 {
+    text-align: left;
+    background-color: #7c9885;
+  }
+  
+  #handling-p {
+    /* margin-top: 0;
+    margin-bottom: 0; */
+    display: inline;
+    /* display: inline-block; */
+    background-color: #5e0b15;
+  }
+  
+  #handling-a {
+    display: block;
+    /* display: inline-block; */
+    background-color: #fde74c;
+  }
+  
+  .box-model,
+  .box-model2 {
+    text-align: left;
+    width: 400px;
+    height: 120px;
+    padding: 20px;
+  }
+  
+  .box-model {
+    border: 10px solid red;
+    margin: 0 0 20px 0;
+  }
+  
+  .box-model2 {
+    box-sizing: border-box;
+    border: 10px solid red;
+  }
+  
+  .position-example {
+    position: relative;
+    background-color: green;
+    height: 150px;
+  }
+  
+  .position-a {
+    position: absolute;
+    bottom: 0;
+    /* right: 0; */
+    /* top: 0; */
+    left: 0;
+    background-color: orange;
+    text-align: left;
+  }
+  
+  .position-r {
+    background-color: rgb(198, 211, 78);
+    color: black;
+  }
+  
+  .span-p {
+    font-size: 1.5em;
+  }
+  
+  .span-p span {
+    font-weight: bold;
+    color: blue;
+  }
+  
+  .custom-bg {
+    background-color: var(--primary);
+  }
+  
+  .custom-t {
+    color: var(--accent);
+  }
+  
+  .custom-p {
+    color: var(--secondary);
+    background-color: transparent;
+  }
+  
+  .background-solid {
+    background: var(--primary);
+    height: 200px;
+  }
+  
+  .background-repeat {
+    background-image: url(https://i.ibb.co/4R4SG2F/sharad-bhat-h1jrj-Y1b7u-I-unsplash.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    height: 400px;
+  }
+  
+  .background-gradient {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+      url(https://i.ibb.co/4R4SG2F/sharad-bhat-h1jrj-Y1b7u-I-unsplash.jpg); */
+  
+    background-image: linear-gradient(
+        to right,
+        rgba(90%, 30%, 50%, 0.9),
+        rgba(0, 0, 0, 0)
+      ),
+      url(https://i.ibb.co/4R4SG2F/sharad-bhat-h1jrj-Y1b7u-I-unsplash.jpg);
+  
+    background-size: contain;
+    background-repeat: repeat;
+    height: 400px;
+  }
+  
+  .container {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 50px;
+    grid-template-columns: 100px 100px 100px;
+    gap: 5px;
+  }
+  
+  .container p {
+    background-color: lightgreen;
+    border: 2px solid green;
+    margin: 0;
+    /* width: 200px;
+  height: 25px; */
+  }
+  
+  .container-a {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 50px;
+    grid-template-columns: 300px 2fr 1fr;
+    column-gap: 5px;
+    border: 1px solid red;
+    margin-top: 10px;
+  }
+  
+  .container-a p {
+    border: 2px solid green;
+    margin: 0;
+  }
+  
+  .wrap {
+    display: grid;
+    background-color: lightblue;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    margin-top: 10px;
+  }
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: 2px solid blue;
+  }
+  
+  .item2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 2px solid blue;
+  }
+  
+  .item3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 2px solid blue;
+  }
+  
+  .item4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 2px solid blue;
+  }
+  
+  .container-div {
+    display: grid;
+    grid-template-areas:
+      "nav nav nav nav"
+      "left main main right"
+      "left main main right"
+      "foot foot foot foot";
+  }
+  
+  .contain-nav {
+    grid-area: nav;
+  }
+  
+  .contain-left {
+    grid-area: left;
+  }
+  
+  .contain-right {
+    grid-area: right;
+  }
+  
+  .contain-bottom {
+    grid-area: foot;
+  }
+  
+  .contain-center {
+    grid-area: main;
+    background-color: lightskyblue;
+  }
+  
+  .contain-right,
+  .contain-left {
+    background-color: grey;
+  }
+  
+  .contain-nav,
+  .contain-bottom {
+    background-color: green;
+  }
+  
+  .wrapper-semantic {
+    display: grid;
+    grid-template-areas:
+      "head head head head"
+      "nav nav nav nav"
+      "left main main right"
+      "left main main right"
+      "foot foot foot foot";
+  }
+  
+  .semantic-nav {
+    grid-area: nav;
+  }
+  
+  .semantic-head {
+    grid-area: head;
+    margin: 16px;
+  }
+  
+  .nav-semantic-left {
+    grid-area: left;
+  }
+  
+  .nav-semantic-right {
+    grid-area: right;
+    width: 200px;
+    background-color: #333;
+    height: 100%;
+  }
+  
+  .main-semantic {
+    display: grid;
+    grid-template-areas: "main-lt main-rt"
+    "art art";
+  }
+  
+  .main-semantic-left {
+    grid-area: main-lt;
+  }

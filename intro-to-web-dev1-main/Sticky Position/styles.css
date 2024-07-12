@@ -1,0 +1,18 @@
+.tile {
+    background: #adfef5;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    background-color: #0ebac5;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    display: grid;
+    place-content: center;
+  }
