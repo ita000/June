@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with JavaScript</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: blue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            color: orange;
+        }
+        .form-container input {
+            display: block;
+            width: calc(100% - 22px);
+            margin: 10px 0;
+            padding: 5px;
+        }
+        .form-container button {
+            background-color: rgb(172, 227, 172);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .submitted-info {
+            margin-top: 20px;
+        }
+        .submitted-info p {
+            margin: 5px 0;
+            color: gold;
+        }
+        .submitted-info .message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="infoForm">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+            <label for="jobTitle">Job Title</label>
+            <input type="text" id="jobTitle" name="jobTitle">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone">
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        <div class="submitted-info" id="submittedInfo"></div>
+    </div>
+    <script>
+        function submitForm() {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const jobTitle = document.getElementById('jobTitle').value;
+            const address = document.getElementById('address').value;
+            const phone = document.getElementById('phone').value;
+            const submittedInfo = document.getElementById('submittedInfo');
+
+            if (firstName && lastName && jobTitle && address && phone) {
+                submittedInfo.innerHTML = `
+                    <p class="message">Information Submitted!</p>
+                    <p>${firstName} ${lastName}</p>
+                    <p>${jobTitle}</p>
+                    <p>${address}</p>
+                    <p>${phone}</p>
+                `;
+            } else {
+                alert('Please fill in all fields before submitting.');
+            }
+        }
+    </script>
+</body>
+</html>
