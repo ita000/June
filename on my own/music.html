@@ -3,64 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music - My Music</title>
+    <title>My Music</title>
     <link rel="stylesheet" href="Music.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="favorite-friends.html">Favorite Friends</a></li>
-            <li><a href="about-me.html">About Me</a></li>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="music.html"><i class="fas fa-music"></i> Music</a></li>
+            <li><a href="favorite-friends.html"><i class="fas fa-users"></i> Favorite Friends</a></li>
+            <li><a href="about-me.html"><i class="fas fa-user"></i> About Me</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
     <div class="container">
-        <h1>YouTube Playlist</h1>
+        <h1>Youtube Playlist</h1>
         <p>Favorite Music</p>
         <a class="playlist-link" href="https://www.youtube.com/watch?v=IW16jkUE-NU&list=PLl6gfWwHLchWhSB2Qsxktz5TrA9UPdVQx" target="_blank">
-            <img src="https://img.icons8.com/fluency/48/000000/youtube-play.png" alt="YouTube Playlist Icon">
+            <img src="images/my-image.jpg" alt="YouTube Playlist Icon"> 
             Watch the Playlist
         </a>
-        <table>
-            <thead>
-                <tr>
-                    <th>Band</th>
-                    <th>Image</th>
-                    <th>Link</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Falling In Reverse</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Falling_in_Reverse_-_The_Drug_in_Me_Is_You.jpg/220px-Falling_in_Reverse_-_The_Drug_in_Me_Is_You.jpg" alt="Falling In Reverse Album Cover"></td>
-                    <td><a href="https://www.youtube.com/@FallingInReverse" target="_blank">Falling In Reverse</a></td>
-                </tr>
-                <tr>
-                    <td>Skillet</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Skillet%2C_Collide.jpg/220px-Skillet%2C_Collide.jpg" alt="Skillet Album Cover"></td>
-                    <td><a href="https://www.youtube.com/channel/UCE8NoMFnai3tTuwdiQJ-78A" target="_blank">Skillet</a></td>
-                </tr>
-                <tr>
-                    <td>I Prevail</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/I_Prevail_True_Power_album_cover.jpeg/220px-I_Prevail_True_Power_album_cover.jpeg" alt="I Prevail Album Cover"></td>
-                    <td><a href="https://www.youtube.com/@IPrevailBand" target="_blank">I Prevail</a></td>
-                </tr>
-                <tr>
-                    <td>Silversun Pickups</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Swoon_%28Silversun_Pickups_album%29_cover.jpg/220px-Swoon_%28Silversun_Pickups_album%29_cover.jpg" alt="Silversun Pickups Album Cover"></td>
-                    <td><a href="https://www.youtube.com/channel/UCiNhPakx9VPiWHrRVk1jPQA" target="_blank">Silversun Pickups</a></td>
-                </tr>
-                <tr>
-                    <td>From Ashes To New</td>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/From_Ashes_to_New_-_Day_One.jpg/220px-From_Ashes_to_New_-_Day_One.jpg" alt="From Ashes To New Album Cover"></td>
-                    <td><a href="https://www.youtube.com/channel/UCIKT9lPoSdK2zgHZ0WsdOww" target="_blank">From Ashes To New</a></td>
-                </tr>
-            </tbody>
-        </table>
+
+        <div class="music-grid">
+            <div class="music-card">
+                <img src="images/falling-in-reverse.jpg" alt="Falling In Reverse">
+                <a href="https://www.youtube.com/@FallingInReverse" target="_blank">Falling In Reverse</a>
+            </div>
+            <div class="music-card">
+                <img src="images/skillet.jpg" alt="Skillet">
+                <a href="https://www.youtube.com/channel/UCE8NoMFnai3tTuwdiQJ-78A" target="_blank">Skillet</a>
+            </div>
+            <div class="music-card">
+                <img src="images/i-prevail.jpg" alt="I Prevail">
+                <a href="https://www.youtube.com/@IPrevailBand" target="_blank">I Prevail</a>
+            </div>
+            <div class="music-card">
+                <img src="images/silversun-pickups.jpg" alt="Silversun Pickups">
+                <a href="https://www.youtube.com/channel/UCiNhPakx9VPiWHrRVk1jPQA" target="_blank">Silversun Pickups</a>
+            </div>
+            <div class="music-card">
+                <img src="images/from-ashes-to-new.jpg" alt="From Ashes To New">
+                <a href="https://www.youtube.com/channel/UCIKT9lPoSdK2zgHZ0WsdOww" target="_blank">From Ashes To New</a>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>© 2024 Your Name. All rights reserved.</p>
+        <p><a href="#">Contact</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
 </body>
 </html>
